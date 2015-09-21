@@ -23,18 +23,3 @@ clean:
 	# Todo: remove object files
 test: $(EXECUTABLE)
 	./test_all
-
-
-
-
-########
-#Current make system
-#BIN=./bin/
-#SOURCE=./source/
-#
-#LIST=$(BIN)/program1 $(BIN)/program2...
-#
-#all: $(LIST)
-#
-#$(BIN)/%:  $(SOURCE)%.cpp
-	    $(CC) $(INC) $< $(CFLAGS) -o $@ $(LIBS)
