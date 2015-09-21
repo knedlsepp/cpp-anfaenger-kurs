@@ -22,4 +22,4 @@ clean:
 	rm $(EXECUTABLE)
 	# Todo: remove object files
 test: $(EXECUTABLE)
-	./test_all
+	./test_all --success
