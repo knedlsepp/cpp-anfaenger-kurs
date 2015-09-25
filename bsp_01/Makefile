@@ -5,7 +5,7 @@ OBJECTS=$(SOURCES:.cpp=.o)
 EXECUTABLE=test_all
 CATCH=external/catch/
 
-CFLAGS=-c -Wall -I$(CATCH) -Isrc
+CFLAGS=-c -Wall -Wextra -pedantic -I$(CATCH) -Isrc
 
 all: external/catch/catch.hpp $(SOURCES) $(EXECUTABLE) 
    	
