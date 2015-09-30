@@ -1,1 +1,1 @@
-auto exp(double) -> double;
+auto my_exp(double) -> double;
