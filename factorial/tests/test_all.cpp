@@ -8,6 +8,6 @@ TEST_CASE ( "When computing factorials, the following equalities hold", "[factor
     CHECK( factorial(2) == 2 );
     CHECK( factorial(3) == 6 );
     CHECK( factorial(10) == 3628800 );
-    CHECK( factorial(13) == 6227020800);
-    CHECK( factorial(14) == 87178291200ULL);
+    CHECK( factorial(13) == 6227020800ULL );
+    CHECK( factorial(14) == 87178291200ULL );
 }
