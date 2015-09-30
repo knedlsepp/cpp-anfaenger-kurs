@@ -1,0 +1,1 @@
+auto exp(double) -> double;
