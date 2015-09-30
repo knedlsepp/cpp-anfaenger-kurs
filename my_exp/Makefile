@@ -1,4 +1,4 @@
-CC=/usr/local/bin/g++-5
+CC=g++
 LDFLAGS=
 SOURCES=./tests/test_all.cpp ./src/example.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
