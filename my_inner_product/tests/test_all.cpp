@@ -12,7 +12,7 @@ TEST_CASE( "When computing my_inner_product", "[my_inner_product]" ) {
     }
     SECTION( "the function should be commutative." ) {
         auto v1 = std::vector<double>{ 1.123, 3.4, 5.23};
-        auto v2 = std::vector<double>{ 5.123, 2.3, 1.12;
+        auto v2 = std::vector<double>{ 5.123, 2.3, 1.12};
         CHECK ( my_inner_product(v1, v2) == my_inner_product(v2, v1) );
     }
 
