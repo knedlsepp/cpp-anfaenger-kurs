@@ -5,10 +5,15 @@
 #include <unordered_map>
 
 TEST_CASE( "When computing type_statistics", "[type_statistic]" ) {
-    SECTION( "A frequency statistic should be computed" ){
-        CHECK ( type_statistic({"temperature"s, "wind"s, "temperature"s, "temperature"s}) == std::unordered_map{{"temperature"s, 3}, {"wind"s, 1}});
+    using statistic = std::unordered_map<std::string, unsigned int>;
+    using namespace std::string_literals;
+    
+    SECTION( "A frequency statistic should be computed." ){
+        auto result = type_statistic({"temperature"s, "wind"s, "temperature"s, "temperature"s});
+        auto expected_result = statistic{{"temperature"s, 3}, {"wind"s, 1}};
+        CHECK ( result ==  expected_result );
     }
-    SECTION( "An empty vector should return an empty statistic" ) {
-        CHECK ( type_statistic({}) == std::unordered_map{} );
+    SECTION( "An empty vector should return an empty statistic." ) {
+        CHECK ( type_statistic({}) == statistic{} );
     }
 }
