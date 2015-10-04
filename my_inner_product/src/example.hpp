@@ -1,1 +1,1 @@
-auto my_sum(std::vector<double> v) -> double;
+auto my_inner_product(std::vector<double> v1, std::vector<double> v2) -> double;
