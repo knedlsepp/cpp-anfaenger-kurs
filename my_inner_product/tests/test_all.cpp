@@ -23,7 +23,7 @@ TEST_CASE( "When computing my_inner_product", "[my_inner_product]" ) {
     }
     
     SECTION( "it should work for temporaries." ) {
-        CHECK ( my_sum({1.,2.}, {1.,2.}) == 5. );
+        CHECK ( my_inner_product({1.,2.}, {1.,2.}) == 5. );
     }
 
     SECTION( "two vectors of different size should throw an exception." ) {
