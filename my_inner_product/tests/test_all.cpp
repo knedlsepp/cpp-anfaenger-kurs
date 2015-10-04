@@ -28,7 +28,7 @@ TEST_CASE( "When computing my_inner_product", "[my_inner_product]" ) {
 
     SECTION( "two vectors of different size should throw an exception." ) {
         
-        REQUIRE_THROWS( my_inner_product({1., 2.}, {1.})
-        REQUIRE_THROWS( my_inner_product({1.}, {1., 2.})
+        REQUIRE_THROWS( my_inner_product({1., 2.}, {1.}));
+        REQUIRE_THROWS( my_inner_product({1.}, {1., 2.}));
     }
 }
